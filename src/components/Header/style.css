@@ -1,0 +1,28 @@
+#header{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header::before{
+    content: "";
+    background-image: url("../../assets/images/sunset.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    opacity: .95;
+}
+
+#webTitle{
+    position: relative;
+    color: var(--text-color);
+    font-size: 400%;
+    opacity: 1;
+}

@@ -1,0 +1,66 @@
+.projectHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectHead {
+    width: 96%;
+    background-color: var(--main-color);
+    padding: 1vh 2%;
+}
+
+.projectHead button {
+    padding: 1vh 1vw;
+    background-color: var(--main-color);
+    border: grey .1rem solid;
+    border-radius: 20%;
+    color: var(--text-color);
+    font-size: 110%;
+}
+
+.projectHead button:hover {
+    cursor: pointer;
+}
+
+.projectHead button:active {
+    background-color: var(--background-color);
+}
+
+.projectName {
+    width: 100%;
+    text-align: center;
+    padding: 4vh 0;
+    color: var(--text-color);
+    font-size: 200%;
+    text-decoration: underline;
+}
+
+.projectDesc {
+    width: 100%;
+}
+
+.projectDesc p {
+    width: 76%;
+    margin: auto;
+    padding: 4vh 2%;
+    color: var(--text-color);
+    font-size: 120%
+}
+
+.projectLinks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #777;
+    padding: 2vh 0;
+}
+
+.projectLinks p{
+    padding: 0 1%;
+    color: var(--text-color);
+}
+
+.liveLink {
+    border-left:  black .1rem solid;
+}

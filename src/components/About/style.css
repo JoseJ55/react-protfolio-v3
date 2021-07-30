@@ -1,0 +1,28 @@
+#about {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 2vh;
+}
+
+#aboutImage {
+    width: 30%;
+}
+
+#aboutText {
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 2vw;
+    color: var(--text-color)
+}
+
+#aboutTitle {
+    width: 100%;
+    padding: 1vh 0;
+}
+
+#aboutPara {
+    width: 100%;
+    padding: 0 1vw;
+    line-height: 130%;
+}

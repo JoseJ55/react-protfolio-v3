@@ -1,0 +1,37 @@
+#contact {
+    width: 80%;
+    margin: auto;
+    border-top: .1rem black solid;
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 0;
+}
+
+#contactTitle {
+    width: 100%;
+    font-size: 200%;
+    color: var(--text-color);
+    text-align: center;
+    padding: 1vh 0;
+    text-decoration: underline;
+}
+
+#contactArea {
+    width: 40%;
+    margin: auto;
+    padding: 3vh 2vw;
+    background-color: #999;
+    border: .3rem #444 solid;
+}
+
+#contactArea p{
+    font-size: 130%;
+    padding: 1vh 1vw;
+    width: 100%;
+    text-align: center;
+}
+
+#contactArea a{
+    color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,26 @@
+#resume{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2vh;
+}
+
+#resumeTitle{
+    width: 100%;
+    font-size: 200%;
+    color: var(--text-color);
+    text-align: center;
+    padding: 1vh 0;
+    text-decoration: underline;
+}
+
+#resumeArea{
+    width: 60%;
+    margin: auto;
+    background-color: #999;
+    padding: 2vh 3vw;
+    border: .3rem #444 solid;
+}
+
+#resumeArea p{
+    font-size: 150%;
+}

@@ -1,0 +1,16 @@
+#projects {
+    width: 80%;
+    margin: auto;
+    border-top: .1rem black solid;
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 0;
+}
+
+#projectsTitle {
+    width: 100%;
+    font-size: 200%;
+    color: var(--text-color);
+    text-align: center;
+    padding: 1vh 0;text-decoration: underline;
+}

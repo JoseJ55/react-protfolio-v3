@@ -1,0 +1,38 @@
+#nav{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10%;
+}
+
+.btn{
+    padding: 2vh 0;
+    font-size: 140%;
+    border: none;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 1vh 2vw;
+}
+
+.btn:hover {
+    background-color: var(--hover-color);
+}
+
+#about{
+    font-size: 140%;
+}
