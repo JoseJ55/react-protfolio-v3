@@ -15,6 +15,10 @@ body{
     background-color: var(--background-color);
 }
 
+.contain {
+    width: 100%;
+}
+
 .homeNavbar {
     width: 10%;
 }
@@ -24,4 +28,20 @@ body{
     float: right;
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (max-width: 1100px) {
+    .homeBody {
+        width: 100%;
+        float:left;
+    }
+    .homeNavbar{width: 0;}
+}
+
+@media only screen and (max-width: 500px) {
+    .homeBody {
+        width: 110%;
+        float: left;
+    }
+    .homeNavbar{width: 0;}
 }

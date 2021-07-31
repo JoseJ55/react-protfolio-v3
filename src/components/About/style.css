@@ -26,3 +26,20 @@
     padding: 0 1vw;
     line-height: 130%;
 }
+
+@media only screen and (max-width: 1100px) {
+    #about {
+        width: 90%;
+        flex-direction: column-reverse;
+    }
+    #aboutText{font-size: 180%;}
+    #aboutPara{padding: 1vh 1vw;}
+    #aboutImage{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #aboutText{font-size: 100%;}
+}

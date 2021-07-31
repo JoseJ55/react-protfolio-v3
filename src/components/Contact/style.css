@@ -2,6 +2,7 @@
     width: 80%;
     margin: auto;
     border-top: .1rem black solid;
+    border-bottom: .1rem black solid;
     display: flex;
     flex-direction: column;
     padding: 1vh 0;
@@ -34,4 +35,15 @@
 #contactArea a{
     color: black;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1100px){
+    #contact{width: 90%;}
+    #contactTitle{font-size: 300%;}
+    #contactArea{width: 85%;}
+    #contactArea p{font-size: 250%;}
+}
+@media only screen and (max-width: 500px){
+    #contactTitle{font-size: 200%;}
+    #contactArea p{font-size: 120%;}
 }

@@ -22,3 +22,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media only screen and (max-width: 1100px){
+    .project{font-size: 300%;}
+    
+}
+@media only screen and (max-width: 500px){
+    .project{font-size: 150%;}
+}

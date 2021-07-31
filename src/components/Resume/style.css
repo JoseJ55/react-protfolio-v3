@@ -24,3 +24,15 @@
 #resumeArea p{
     font-size: 150%;
 }
+
+@media only screen and (max-width: 1100px){
+    #resume{width: 95%;}
+    #resumeTitle{font-size: 300%;}
+    #resumeArea{width: 90%;}
+    #resume p{font-size: 250%;}
+}
+@media only screen and (max-width: 500px){
+    #resume{width: 90%;}
+    #resumeTitle{font-size: 200%;}
+    #resume p{font-size: 150%;}
+}
