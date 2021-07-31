@@ -36,3 +36,52 @@
 #about{
     font-size: 140%;
 }
+
+/* ---------------Responsive Navbar---------------- */
+#navRes {
+    position: fixed;
+    display: none;
+    width: 100%;
+    background-color: var(--main-color);
+    flex-direction: column;
+}
+
+#navRes button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#iconContainer {
+    width: 96%;
+    padding: 2%;
+}
+
+#btnResLink {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 0;
+}
+
+#btnResLink button:hover {
+    background-color: #777;
+}
+
+#btnResLink a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 160%;
+    display: block;
+    padding: 3vh 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    #navRes {
+        display: flex;
+    }
+
+    #nav {
+        display: none;
+    }
+}
