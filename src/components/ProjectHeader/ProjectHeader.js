@@ -1,6 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import "./style.css";
+import { IoIosArrowBack } from 'react-icons/io';
 
 function ProjectHeader({ title, project, desc, links}) {
     let history = useHistory();
@@ -15,7 +16,7 @@ function ProjectHeader({ title, project, desc, links}) {
     return(
         <div className="projectHeader">
             <div className="projectHead">
-                <button onClick={home}>Back</button>
+                <button onClick={home}><IoIosArrowBack size={30} color={"white"}/></button>
             </div>
             
             <h2 className="projectName">{title}</h2>

@@ -11,7 +11,7 @@
 }
 
 .projectHead button {
-    padding: 1vh 1vw;
+    padding: .5vh 2vw;
     background-color: var(--main-color);
     border: grey .1rem solid;
     border-radius: 20%;
@@ -57,10 +57,25 @@
 }
 
 .projectLinks p{
+    font-size: 130%;
     padding: 0 1%;
     color: var(--text-color);
 }
 
 .liveLink {
     border-left:  black .1rem solid;
+}
+
+@media only screen and (max-width: 1100px){
+    .projectHead button{padding: 1vh 3vw;}
+    .projectName {font-size: 250%;}
+    .projectDesc p {font-size: 150%}
+    .projectLinks p {font-size: 140%;}
+}
+
+@media only screen and (max-width: 500px){
+    .projectHead button {padding: .5vh 2vw;}
+    .projectName {font-size: 200%;}
+    .projectDesc p {font-size: 120%;}
+    .projectLinks p {font-size: 90%;}
 }
