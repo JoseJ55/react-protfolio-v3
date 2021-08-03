@@ -1,15 +1,36 @@
+.projectContainer a{
+    position: relative;
+    text-align: center;
+}
+
 .project{
     width: 98%;
     margin: 1%;
     min-height: 40vh;
     font-size: 150%;
+    background-size: cover;
+    opacity: .8;
 }
 
-#project1{
+.project:hover {
+    cursor: pointer;
+    opacity: .3;
+}
+
+.projectTitle {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -400%);
+    font-size: 200%;
+    color: var(--text-color)
+}
+
+/* #project1{
     background-image: url("./../../assets/images/sunset.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 #project2{
     background-image: url("./../../assets/images/sunset.jpg");

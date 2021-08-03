@@ -11,7 +11,10 @@ function Projects() {
         <div id="projects">
             <h2 id="projectsTitle">Projects</h2>
             {projects.map((project) => {
-                return <ProjectCard title={project.title}/>
+                return <ProjectCard 
+                title={project.title} 
+                thumbnail={project.exampleImage}
+                />
             })}
         </div>
     )
