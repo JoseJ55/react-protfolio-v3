@@ -1,0 +1,28 @@
+.videoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh 0;
+}
+
+.videoArea {
+    width: 60%;
+    height: 60%;
+}
+
+.video:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px){
+    .videoArea {
+        width: 70%;
+        height: 70%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .videoArea {
+        width: 80%;
+        height: 80%;
+    }
+}
