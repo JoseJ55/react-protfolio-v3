@@ -47,9 +47,14 @@
     transition-duration: 1s ease;
     width: 96%;
 }
-
 .slide.active {
     opacity: 1;
     transition-duration: 1s;
     transform: scale(1.08);
+}
+
+.slide img {
+    width: 80%;
+    margin-left: 12%;
+    margin-right: 8%;
 }
