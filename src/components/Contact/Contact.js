@@ -6,9 +6,9 @@ function Contact() {
         <div id="contact">
             <h2 id="contactTitle">Contact</h2>
             <div id="contactArea">
-                <p id="contactEmail">Email: josejimenez826@gmail.com</p>
+                <p id="contactEmail">Email: <a href="josejimenez826@gmail.com">josejimenez826@gmail.com</a></p>
                 <p id="contactGit" >Github: <a href="https://github.com/JoseJ55" >https://github.com/JoseJ55</a></p>
-                <p id="contactLink">LinkedIn: </p>
+                <p id="contactLink">LinkedIn: <a href="www.linkedin.com/in/jose-jimenez-238453169">www.linkedin.com/in/jose-jimenez-238453169</a> </p>
             </div>
         </div>
     )

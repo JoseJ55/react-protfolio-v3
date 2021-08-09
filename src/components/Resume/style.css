@@ -14,15 +14,20 @@
 }
 
 #resumeArea{
-    width: 60%;
+    width: 90%;
     margin: auto;
     background-color: #999;
-    padding: 2vh 3vw;
     border: .3rem #444 solid;
+    height: 90vh;
 }
 
 #resumeArea p{
     font-size: 150%;
+}
+
+#resumeDoc {
+    width: 100%;
+    height: 100%;
 }
 
 @media only screen and (max-width: 1100px){
