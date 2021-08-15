@@ -8,6 +8,7 @@ function ProjectHeader({ title, project, desc, links}) {
     console.log(title)
     console.log(project)
     // console.log(links)
+    const fake = ["react", "node", "html", "css", "javascript"]
 
     const home = () => {
         history.push("/");
@@ -28,6 +29,15 @@ function ProjectHeader({ title, project, desc, links}) {
             <div className="projectLinks">
                 <p>Github: <a href={project.links[0]}>{project.links[0]}</a></p>
                 {project.links[1] ? <p className="liveLink">Live project: <a href={project.links[1]}>{project.links[1]}</a></p> : <p></p>}
+            </div>
+            <div className="projectTools">
+                <p>Tools</p>
+                <ul>
+                    {project.tools.map((skill) => {
+                        return <li>{skill}</li>
+                    })}
+                </ul>
+                
             </div>
         </div>
     )
