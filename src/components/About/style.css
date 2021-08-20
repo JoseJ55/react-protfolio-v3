@@ -32,6 +32,7 @@
 #aboutTitle {
     width: 100%;
     padding: 1vh 0;
+    color: var(--secondary-color)
 }
 
 #aboutPara {

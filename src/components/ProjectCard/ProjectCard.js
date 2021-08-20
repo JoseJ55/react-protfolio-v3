@@ -7,7 +7,8 @@ import image2 from "./../../assets/images/teamProfileGen.png";
 import image3 from "./../../assets/images/weatherDashboard.png";
 
 function ProjectCard({ title  }) {
-
+    // This is the project card component where it checks if an item is in an
+    // array and renders the spcific card.
     
     return (
         <div className="projectContainer">

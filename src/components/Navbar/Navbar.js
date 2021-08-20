@@ -2,14 +2,17 @@ import React, { useState } from "react";
 import "./style.css";
 import { FiMenu } from 'react-icons/fi';
 
-import homeIcon from "./../../assets/images/home-icon48px.png";
-import personIcon from "./../../assets/images/person-icon48px.png";
-import websiteIcon from "./../../assets/images/website-icon50px.png";
-import contactIcon from "./../../assets/images/contact-icon50px.png";
-import resumeIcon from "./../../assets/images/resume-icon48px.png";
+import { AiFillHome } from "react-icons/ai";
+import { BsFillPersonFill } from "react-icons/bs";
+import { MdWebAsset, MdPermContactCalendar } from "react-icons/md";
+import { IoMdDocument} from "react-icons/io";
 
 function Navbar() {
+    // This component renders the navbar on the main page.
     const [navStyle, setNavStyle] = useState({display: "none"})
+
+    // This function is for the responsive part of the page where if a window is
+    // small enough it will change to the responsive version. 
     const toggleNav = () => {
         if(navStyle.display === "none") {
             setNavStyle({display: "flex"});
@@ -21,11 +24,11 @@ function Navbar() {
     return (
         <>
             <div id="nav">
-                <button className="btn"><a href="/"><img src={homeIcon} alt="https://icons8.com"/>Home</a></button>
-                <button className="btn"><a href="/#about"><img src={personIcon} alt="https://icons8.com/icon/86363/person"/>About</a></button>
-                <button className="btn"><a href="/#projects"><img src={websiteIcon} alt="https://icons8.com/icon/87836/resume-website"/>Projects</a></button>
-                <button className="btn"><a href="/#contact"><img src={contactIcon} alt="https://icons8.com/icon/7863/contact"/>Contact</a></button>
-                <button className="btn"><a href="/#resume"><img src={resumeIcon} alt="https://icons8.com"/>Resume</a></button>
+                <button className="btn"><a href="/"><AiFillHome size={42}/>Home</a></button>
+                <button className="btn"><a href="/#about"><BsFillPersonFill size={42}/>About</a></button>
+                <button className="btn"><a href="/#projects"><MdWebAsset size={42} />Projects</a></button>
+                <button className="btn"><a href="/#contact"><MdPermContactCalendar size={42} />Contact</a></button>
+                <button className="btn"><a href="/#resume"><IoMdDocument size={42} />Resume</a></button>
             </div>
 
             <div id="navRes">

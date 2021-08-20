@@ -3,6 +3,7 @@ import ReactPlayer from "react-player";
 import "./style.css";
 
 function ProjectVideo({ video }) {
+    // This component renders the video for the current project being looked at.
     return (
         <div className="videoContainer">
             {/* need to make video play on touch when on mobile */}

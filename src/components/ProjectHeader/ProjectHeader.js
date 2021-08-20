@@ -3,12 +3,9 @@ import { useHistory } from "react-router-dom";
 import "./style.css";
 import { IoIosArrowBack } from 'react-icons/io';
 
-function ProjectHeader({ title, project, desc, links}) {
+function ProjectHeader({ title, project}) {
+    // This component renders the head of each project to give information on it.
     let history = useHistory();
-    console.log(title)
-    console.log(project)
-    // console.log(links)
-    const fake = ["react", "node", "html", "css", "javascript"]
 
     const home = () => {
         history.push("/");

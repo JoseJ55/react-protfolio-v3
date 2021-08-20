@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 
 function Resume() {
+    // This component renders the resume section showing resume on main page.
     return (
         <div id="resume">
             <h2 id="resumeTitle">Resume</h2>

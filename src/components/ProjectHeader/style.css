@@ -31,7 +31,7 @@
     width: 100%;
     text-align: center;
     padding: 4vh 0;
-    color: var(--text-color);
+    color: var(--secondary-color);
     font-size: 200%;
     text-decoration: underline;
 }
@@ -56,10 +56,18 @@
     padding: 2vh 0;
 }
 
+.projectLinks a {
+    color: var(--secondary-color)
+}
+
+.projectLinks a:hover {
+    color: var(--text-color);
+}
+
 .projectLinks p{
     font-size: 130%;
     padding: 0 1%;
-    color: var(--text-color);
+    color: var(--secondary-color);
 }
 
 .liveLink {
@@ -74,6 +82,10 @@
     padding: 2vh 0;
     color: white;
     font-size: 130%;
+}
+
+.projectTools p{
+    color: var(--secondary-color);
 }
 
 .projectTools ul{

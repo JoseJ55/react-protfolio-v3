@@ -2,6 +2,8 @@ import React from "react";
 import "./style.css";
 
 function Contact() {
+    // This component render the contact section on the main page which shows my
+    // personal links.
     return (
         <div id="contact">
             <h2 id="contactTitle">Contact</h2>

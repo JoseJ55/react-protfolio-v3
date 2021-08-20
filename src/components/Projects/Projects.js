@@ -5,6 +5,8 @@ import ProjectCard from "../ProjectCard/ProjectCard";
 import { ProjectsContext } from "./../../projectsContext"
 
 function Projects() {
+    // This component renders the project card on the main page and add or loses
+    // card depending on how many projects there are.
     const { projects } = useContext(ProjectsContext)
 
     return (

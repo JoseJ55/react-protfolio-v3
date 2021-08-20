@@ -3,6 +3,8 @@ import "./style.css";
 import profilePic from "./../../assets/images/ProfilePic.jpg";
 
 function About() {
+    // This component renders the about section on the main page which gives
+    // information about me.
     return (
         <div id="about">
             {/* <div id="imageArea"> */}

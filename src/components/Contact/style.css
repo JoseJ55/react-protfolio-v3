@@ -11,7 +11,7 @@
 #contactTitle {
     width: 100%;
     font-size: 200%;
-    color: var(--text-color);
+    color: var(--secondary-color);
     text-align: center;
     padding: 1vh 0;
     text-decoration: underline;
