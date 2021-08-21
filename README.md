@@ -25,6 +25,10 @@ the github, email, and linkedin which can all be click and taken to the link.
 Lastly, ther resume section shows the document where my resume is being held on
 the webpage. 
 
+## Images 
+
+![alt text](https://github.com/JoseJ55/react-protfolio-v3/blob/main/public/images/googleBooks/portfolioPic.png?raw=true)
+
 ## Links 
 
 https://portfolio826.herokuapp.com/
