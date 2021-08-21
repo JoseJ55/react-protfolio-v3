@@ -2,7 +2,7 @@
     width: 80%;
     margin: auto;
     display: flex;
-    padding: 2vh;
+    padding: 1vh;
 }
 
 #imageArea {
@@ -45,15 +45,17 @@
     #about {
         width: 90%;
         flex-direction: column-reverse;
+        font-size: 90%;
     }
     #aboutText{font-size: 180%;}
     #aboutPara{padding: 1vh 1vw;}
     #aboutImage{
-        width: 80%;
+        width: 50%;
         margin: auto;
     }
 }
 
 @media only screen and (max-width: 500px){
+    #about{font-size: 110%;}
     #aboutText{font-size: 100%;}
 }
