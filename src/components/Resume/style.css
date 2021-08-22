@@ -39,5 +39,9 @@
 @media only screen and (max-width: 500px){
     #resume{width: 90%;}
     #resumeTitle{font-size: 200%;}
+    #resumeArea{
+        width: 90%;
+        height: 50vh;
+    }
     #resume p{font-size: 150%;}
 }
