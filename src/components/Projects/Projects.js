@@ -15,6 +15,7 @@ function Projects() {
             {projects.map((project) => {
                 return <ProjectCard 
                 title={project.title} 
+                images={project.images}
                 thumbnail={project.exampleImage}
                 />
             })}
