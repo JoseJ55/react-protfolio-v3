@@ -85,7 +85,7 @@
         width: 100%;
     }
     #nav {display: none;}
-    #btnResLink a {font-size: 300%;}
+    #btnResLink a {font-size: 200%;}
 }
 
 @media only screen and (max-width: 500px) {
