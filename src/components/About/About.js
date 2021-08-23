@@ -8,17 +8,30 @@ function About() {
     // information about me.
     return (
         <div id="about">
-            {/* <div id="imageArea"> */}
+            <div id="aboutNorm">
                 <img id="aboutImage" src={profilePic} alt="Profile"></img>
-            {/* </div> */}
 
-            <div id="aboutText">
-                <h2 id="aboutTitle">About</h2>
-                <p id="aboutPara">
+                <div id="aboutText">
+                    <h2 id="aboutTitle">About</h2>
+                    <p id="aboutPara">
+                    A Web Developer with an Associates’s Degree in computer information science at Victor Valley College and a certificate in Web Development from the University of California Riverside. Proficient in programming with HTML, CSS, and javascript which is used to connect both the frontend and backend of a website.
+                    </p>
+                    <Skills />
+                </div>
+            </div>
+
+            <div id="aboutRes">
+                <h2 id="aboutTitleRes">About</h2>
+                <p id="aboutParaRes">
                 A Web Developer with an Associates’s Degree in computer information science at Victor Valley College and a certificate in Web Development from the University of California Riverside. Proficient in programming with HTML, CSS, and javascript which is used to connect both the frontend and backend of a website.
                 </p>
-                <Skills />
+                
+                <div id="aboutTextRes">
+                    <Skills />
+                    <img id="aboutImageRes" src={profilePic} alt="Profile"></img>
+                </div>
             </div>
+            
         </div>
     )
 }
