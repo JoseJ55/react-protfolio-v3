@@ -32,7 +32,7 @@
 
 @media only screen and (max-width: 1100px){
     #resume{width: 95%;}
-    #resumeTitle{font-size: 300%;}
+    #resumeTitle{font-size: 250%;}
     #resumeArea{width: 90%;}
     #resume p{font-size: 250%;}
 }

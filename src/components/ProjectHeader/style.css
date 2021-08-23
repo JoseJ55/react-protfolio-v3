@@ -89,7 +89,9 @@
 }
 
 .projectTools ul{
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     padding: 1vh 2vw;
 }
 
@@ -110,6 +112,6 @@
     .projectHead button {padding: .5vh 2vw;}
     .projectName {font-size: 200%;}
     .projectDesc p {font-size: 120%;}
-    .projectLinks p {font-size: 90%;}
-    .projectTools li{font-size: 70%;}
+    .projectLinks p {font-size: 85%;}
+    .projectTools li{font-size: 80%;}
 }

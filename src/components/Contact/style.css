@@ -49,5 +49,6 @@
 }
 @media only screen and (max-width: 500px){
     #contactTitle{font-size: 200%;}
+    #contactArea {width: 70%;}
     #contactArea p{font-size: 120%;}
 }
