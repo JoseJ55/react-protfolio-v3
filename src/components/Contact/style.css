@@ -1,8 +1,8 @@
 #contact {
     width: 80%;
     margin: auto;
-    border-top: .1rem black solid;
-    border-bottom: .1rem black solid;
+    border-top: .1rem var(--secondary-color) solid;
+    border-bottom: .1rem var(--secondary-color) solid;
     display: flex;
     flex-direction: column;
     padding: 2vh 0;

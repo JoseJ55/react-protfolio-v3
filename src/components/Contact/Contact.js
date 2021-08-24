@@ -5,7 +5,7 @@ function Contact() {
     // This component render the contact section on the main page which shows my
     // personal links.
     return (
-        <div id="contact">
+        <div data-aos="fade-up" id="contact">
             <h2 id="contactTitle">Contact</h2>
             <div id="contactArea">
                 <p id="contactEmail">Email: <a href="josejimenez826@gmail.com">josejimenez826@gmail.com</a></p>

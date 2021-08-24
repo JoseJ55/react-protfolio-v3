@@ -18,7 +18,7 @@ function ProjectCard({ title, images }) {
     }
     
     return (
-        <div className="projectContainer">
+        <div data-aos="fade-up" className="projectContainer">
             <p className="projectTitle" onClick={() => changeToProject(title)}>{title}</p>
             <input 
                 type="button" 

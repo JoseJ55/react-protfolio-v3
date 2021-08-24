@@ -10,7 +10,7 @@ function Projects() {
     const { projects } = useContext(ProjectsContext)
 
     return (
-        <div id="projects">
+        <div data-aos="fade-up" id="projects">
             <h2 id="projectsTitle">Projects</h2>
             {projects.map((project) => {
                 return <ProjectCard 
