@@ -1,0 +1,117 @@
+#footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-color);
+    padding: 5vh 0;
+    
+}
+
+#contact {
+    width: 20%;
+    padding: 2vh 0;
+}
+
+#contactTitle {
+    color: var(--secondary-color);
+    /* padding: 10vh; */
+    margin: 0  0 2vh 0;
+}
+
+.contactItem{
+    color: var(--secondary-color);
+    padding: 1vh 0;
+}
+
+.contactItem a {
+    text-decoration: none;
+    color: var(--secondary-color)
+}
+
+.contactItem a:hover {
+    color: white;
+}
+
+#contactIcons {
+    display: flex;
+    padding: 1vh 0;
+}
+
+#email {
+    width: 40%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.emailItem{
+    width: 100%;
+    padding: 1vh 3%;
+    background-color: var(--main-color);
+    border: none;
+    border-bottom: 1px var(--secondary-color) solid;
+    color: white;
+    font-size: 110%;
+    margin: 1vh 0;
+    outline: var(--secondary-color);
+}
+
+.emailItem:hover{
+    border: 1px var(--secondary-color) solid;
+    padding: .93vh 2.8%;
+}
+
+.emailItem:focus {
+    border: 1px var(--secondary-color) solid;
+    padding: .93vh 2.8%;
+}
+
+#emailName {
+    width: 100%;
+}
+
+#emailEmail {
+    width: 43%;
+    margin: 0 2% 0 0;
+}
+
+#emailPhone {
+    width: 43%;
+}
+
+#emailSub {
+    width: 100%;
+}
+
+#emailMessage {
+    font-family: inherit;
+    resize: none;
+}
+
+#emailMessage::-webkit-scrollbar {
+    width: 10px;
+    background-color: #444;
+}
+
+#emailMessage::-webkit-scrollbar-thumb {
+    background-color: #888;
+    outline: 1px solid #666;
+    border-radius: 10px;
+}
+
+#emailBtn {
+    width: 100%;
+    padding: 1vh 0;
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 1px var(--secondary-color) solid;
+    font-size: 110%;
+}
+
+#emailBtn:hover {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    cursor: pointer;
+    transition-duration: .5s;
+}
