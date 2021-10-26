@@ -6,6 +6,7 @@ import About from "../components/About/About";
 import Projects from "../components/Projects/Projects";
 import Contact from "../components/Contact/Contact";
 import Resume from "../components/Resume/Resume";
+import Footer from "../components/Footer/Footer";
 import "./style.css";
 
 function Home() {
@@ -15,8 +16,9 @@ function Home() {
                 <Header />
                 <About />
                 <Projects />
-                <Contact />
+                {/* <Contact /> */}
                 <Resume />
+                <Footer />
             </div>
             <div className="homeNavbar">
                 <Navbar />
