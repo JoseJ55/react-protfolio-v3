@@ -1,0 +1,38 @@
+#footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-color);
+    padding: 5vh 0;
+    
+}
+
+#contact {
+    /* change width */
+    width: 20%;
+}
+
+#contactTitle {
+    color: var(--secondary-color);
+    /* padding: 10vh; */
+    margin: 0  0 2vh 0;
+}
+
+.contactItem{
+    color: var(--secondary-color);
+    padding: 1vh 0;
+}
+
+.contactItem a {
+    text-decoration: none;
+    color: var(--secondary-color)
+}
+
+.contactItem a:hover {
+    color: white;
+}
+
+#contactIcons {
+    display: flex;
+    padding: 1vh 0;
+}
