@@ -5,6 +5,8 @@ import emailjs from "emailjs-com";
 // import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
+require('dotenv').config({path: './../../.env'});
+
 function Footer(){
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -20,15 +22,21 @@ function Footer(){
         // console.log(subject);
         // console.log(text);
         let mail = {
-            Name: name,
-            Email: email,
-            Phone: phone,
-            Subject: subject,
-            Text: text
+            from_name: name,
+            from_email: email,
+            from_phone: phone,
+            subject: subject,
+            message: text
         }
-        
-        emailjs.sendForm("service_34856gt", "template_6oej2fw", mail, "user_XiAqAO8SE5exdjP8TwO0u")
+
+        emailjs.send(
+            "service_34856gt", 
+            "template_6oej2fw", 
+            mail, 
+            "user_XiAqAO8SE5exdjP8TwO0u"
+        )
         .then((result) => {
+            // window.location.reload()
             console.log(result)
             console.log(name)
         }, (err) => {
