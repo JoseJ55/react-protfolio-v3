@@ -1,0 +1,29 @@
+#notice {
+    position: fixed;
+    bottom:0;
+    right:0;
+    display: flex;
+    background-color: #888;
+    border-radius: 10px;
+    margin: 1vh 1vw;
+    border: 1px var(--secondary-color) solid;
+    align-items: center;
+}
+
+#notice p{
+    padding: 1.5vh 1vw;
+}
+
+#notice button {
+    background-color: transparent;
+    padding: 1vh 1vw;
+    border: none;
+    border-radius: 0 10px 10px 0;
+}
+
+#notice button:hover {
+    background-color: var(--secondary-color);
+    transition-duration: .5s;
+    cursor: pointer;
+    color: #888;
+}

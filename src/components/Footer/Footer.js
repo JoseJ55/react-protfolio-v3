@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import "./style.css";
 import emailjs from "emailjs-com";
 
-// import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import Notice from "./../Notice/Notice";
 
-require('dotenv').config({path: './../../.env'});
+require('dotenv').config();
 
 function Footer(){
+    const [notice, setNotice] = useState(false);
+    const [noticeText, setNoticeText] = useState("");
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
@@ -15,12 +17,6 @@ function Footer(){
     const [text, setText] = useState("");
 
     const sendData = () => {
-        // e.preventDefault();
-        // console.log(name);
-        // console.log(email);
-        // console.log(phone);
-        // console.log(subject);
-        // console.log(text);
         let mail = {
             from_name: name,
             from_email: email,
@@ -36,11 +32,14 @@ function Footer(){
             "user_XiAqAO8SE5exdjP8TwO0u"
         )
         .then((result) => {
-            // window.location.reload()
             console.log(result)
-            console.log(name)
-        }, (err) => {
+            setNotice(true);
+            setNoticeText("success")
+
+        }).catch((err) => {
             console.log(err.text)
+            setNotice(true);
+            setNoticeText("error");
         })
     }
 
@@ -96,6 +95,7 @@ function Footer(){
                 
                 <input id="emailBtn" type="button" value="Submit" onClick={() => sendData()}/>
             </div>
+            {notice ? <Notice notice={notice} setNotice={setNotice} noticeText={noticeText}/> : <div></div>}
         </div>
     )
 }
