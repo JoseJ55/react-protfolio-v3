@@ -3,9 +3,9 @@ import "./style.css";
 import { useHistory } from "react-router-dom";
 
 // change names here for pictures.
-import image1 from "./../../assets/images/googleBooksHome.png";
-import image2 from "./../../assets/images/teamProfileGen.png";
-import image3 from "./../../assets/images/weatherDashboard.png";
+// import image1 from "./../../assets/images/googleBooksHome.png";
+// import image2 from "./../../assets/images/teamProfileGen.png";
+// import image3 from "./../../assets/images/weatherDashboard.png";
 
 function ProjectCard({ title, images }) {
     // This is the project card component where it checks if an item is in an
