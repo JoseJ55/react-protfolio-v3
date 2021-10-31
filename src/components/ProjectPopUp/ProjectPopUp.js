@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style.css";
 import { useSpring, animated } from "react-spring";
 import { AiOutlineClose } from "react-icons/ai";
@@ -21,14 +21,15 @@ function ProjectPopUp({ popUp, setPopUp, title, link, desc }) {
                     <button 
                         type="button" 
                         id="popUpExit"
-                        onClick={() => setPopUp(false)} value="show"
-                    ><AiOutlineClose/></button>
+                        onClick={() => setPopUp(false)} 
+                        // value="show"
+                    ><AiOutlineClose size={28}/></button>
 
                     <h2>{title}</h2>
                     {/* change desc to a sorter version so it can fit on screen better. */}
                     <p>{desc}</p>
 
-                    <button type="button" value="full">More Info</button>
+                    <button type="button" value="full" id="popUpMore">More Info</button>
                 {/* </div> */}
             </animated.div>
         </div>
