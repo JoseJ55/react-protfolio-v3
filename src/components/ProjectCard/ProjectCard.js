@@ -33,7 +33,7 @@ function ProjectCard({ title, images, links, desc }) {
                     backgroundImage: `url(${images[0]})`
                 }}
             />
-            {popUp ? <ProjectPopUp setPopUp={setPopUp} title={title} link={links} desc={desc}/>: <div></div>}
+            {popUp ? <ProjectPopUp popUp={popUp} setPopUp={setPopUp} title={title} link={links} desc={desc}/>: <div></div>}
             
         </div>
     )
