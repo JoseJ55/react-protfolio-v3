@@ -2,6 +2,9 @@
   "name": "react-protfolio-v3",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "16.x"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -16,6 +19,7 @@
     "react-player": "^2.9.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "spring": "^0.0.0",
     "web-vitals": "^1.1.2"
   },
   "peerDependencies": {
