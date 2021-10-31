@@ -12,13 +12,17 @@ function Projects() {
     return (
         <div id="projects">
             <h2 id="projectsTitle">Projects</h2>
-            {projects.map((project) => {
-                return <ProjectCard 
-                title={project.title} 
-                images={project.images}
-                thumbnail={project.exampleImage}
-                />
-            })}
+            <div id="projectArea">
+                {projects.map((project) => {
+                    return <ProjectCard 
+                    title={project.title} 
+                    images={project.images}
+                    thumbnail={project.exampleImage}
+                    link={project.links}
+                    desc={project.description}
+                    />
+                })}
+            </div>
         </div>
     )
 }
