@@ -2,18 +2,19 @@ import React, { useEffect } from "react";
 import "./style.css";
 import profilePic from "./../../assets/images/ProfilePic.jpg";
 import Skills from "./../Skills/Skills";
-import "aos/dist/aos.css";
-import Aos from "aos"
+// import "aos/dist/aos.css";
+// import Aos from "aos"
 
 function About() {
     // This component renders the about section on the main page which gives
     // information about me.
-    useEffect(() => {
-        Aos.init({duration: 1500})
-    }, [])
+    // useEffect(() => {
+    //     Aos.init({duration: 1500})
+    // }, [])
 
     return (
-        <div data-aos="fade-up" id="about">
+        // data-aos="fade-up"
+        <div id="about">
             <div id="aboutNorm">
                 <img id="aboutImage" src={profilePic} alt="Profile"></img>
 
