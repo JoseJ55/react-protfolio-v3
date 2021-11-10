@@ -13,8 +13,7 @@ function About() {
     // }, [])
 
     return (
-        // data-aos="fade-up"
-        <div id="about">
+        <div data-aos="fade-up" id="about">
             <div id="aboutNorm">
                 <img id="aboutImage" src={profilePic} alt="Profile"></img>
 
