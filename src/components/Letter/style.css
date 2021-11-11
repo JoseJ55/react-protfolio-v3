@@ -5,7 +5,7 @@
 .letter {
     transition-duration: .5s;
     /* transform: scale(1.5); */
-    display: inline-block;
+    /* display: inline-block; */
     /* animation: shake 0.5s; */
     /* animation-iteration-count: infinite; */
     /* animation: change 1s; */

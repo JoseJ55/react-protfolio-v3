@@ -36,21 +36,22 @@ function Header() {
 
     return (
         <div id="header">
-            {/* <h1 id="webTitle">{title}</h1> */}
             <div id="webTitle">
                 {titleArr.map((letter) => {
-                    return <Letter letter={letter} />
-                    // if (letter === " "){
-                    //     return <span>{letter}</span>
-                    // } else {
-                    //     return <span 
-                    //         onClick={() => letterBtn()} 
-                    //         className="letter"
-                    //         style={letterAnimation}
-                    //         >
-                    //             {letter}
-                    //         </span>
-                    // }
+                    if (letter === " "){
+                        return <span>{letter}</span>
+                    } else {
+                        return ( 
+                            <Letter letter={letter} />
+                            // <span 
+                            //     // onClick={() => letterBtn()} 
+                            //     className="letter"
+                            //     // style={letterAnimation}
+                            // >
+                            //     {letter}
+                            // </span>
+                        )
+                    }
                 })}
             </div>
         </div>
