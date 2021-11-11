@@ -21,7 +21,7 @@ function Header() {
                 // position: "absolute",
                 // bottom: 0,
                 // transition: "1s",
-                animation: "change 1s",
+                animation: "change 1s infinite",
             })
         } else {
             setLetterAnimation({

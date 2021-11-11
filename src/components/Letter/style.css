@@ -5,25 +5,171 @@
 .letter {
     transition-duration: .5s;
     /* transform: scale(1.5); */
-    /* display: inline-block; */
+    display: inline-block;
     /* animation: shake 0.5s; */
     /* animation-iteration-count: infinite; */
     /* animation: change 1s; */
-    /* animation-iteration-count: infinite;*/
+    /* animation-iteration-count: infinite; */
+    /* animation-fill-mode: forwards; */
 }
 
 .letter:hover {
-    /* font-family: Arial, Helvetica, sans-serif; */
     color: var(--secondary-color);
     cursor: pointer;
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
     /* animation: shake 0.5s; */
-    /* animation-iteration-count: infinite;*/
+    /* animation-iteration-count: initial; */
 }
 
-@keyframes change {
-    10% {transform: rotate(180deg);}
+@keyframes bounce {
+    0% {transform: translate(0px, 0px);}
+    10% {transform: translate(0px, -100%);}
+    20% {transform: translate(0px, 0px);}
+    30% {transform: translate(0px, -75%);}
+    40% {transform: translate(0px, 0px);}
+    50% {transform: translate(0px, -50%);}
+    60% {transform: translate(0px, 0px);}
+    70% {transform: translate(0px, -40%);}
+    80% {transform: translate(0px, 0px);}
+    90% {transform: translate(0px, -20%);}
+    100% {transform: translate(0px, 0px);}
+}
+
+@keyframes flipNRunOne {
+    0% {transform: scale(1, 1);}
+    20% {transform: scale(-1, 1);}
+    40% {transform: scale(1, 1);}
+    60% {transform: scale(-1, 1);}
+    100% {transform: translate(-1000px, 0px);}
+}
+
+@keyframes flipNRunTwo {
+    0% {transform: scale(1, 1);}
+    20% {transform: scale(-1, 1);}
+    40% {transform: scale(1, 1);}
+    60% {transform: scale(-1, 1);}
+    80% {transform: rotate(-90deg);}
+    100% {transform: translate(0px, -1000%);}
+}
+
+@keyframes flipNRunThree {
+    0% {transform: scale(1, 1);}
+    20% {transform: scale(-1, 1);}
+    40% {transform: scale(1, 1);}
+    60% {transform: scale(-1, 1);}
+    80% {transform: rotate(90deg);}
+    100% {transform: translate(0px, 1000%);}
+}
+
+@keyframes flipNRunFour {
+    0% {transform: scale(1, 1);}
+    30% {transform: scale(-1, 1);}
+    60% {transform: scale(1, 1);}
+    100% {transform: translate(1000px, 0px);}
+}
+
+@keyframes drop {
+    0% {transform: translate(0px, 0px);}
+    100% {transform: translate(0px, 500%);}
+}
+
+@keyframes offWalls {
+    0% {transform: translate(0px, 0px);}
+    5% {transform: translate(2px, -32%) rotate(45deg); color: red;}
+    10% {transform: translate(0px, -64%) rotate(90deg); color: red;}
+    15% {transform: translate(2px, -96%) rotate(135deg); color: orange;}
+    20% {transform: translate(0px, -128%) rotate(180deg); color: yellow;}
+    25% {transform: translate(2px, -160%) rotate(225deg); color: green;}
+    30% {transform: translate(0px, -192%) rotate(270deg); color: blue;}
+    35% {transform: translate(2px, -224%) rotate(315deg); color: violet;}
+    40% {transform: translate(0px, -256%) rotate(360deg); color: red;}
+    45% {transform: translate(2px, -288%) rotate(45deg); color: orange;}
+    50% {transform: translate(0px, -320%) rotate(90deg); color: yellow;}
+    55% {transform: translate(2px, -352%) rotate(135deg); color: green;}
+    60% {transform: translate(0px, -384%) rotate(180deg); color: blue;}
+    65% {transform: translate(2px, -416%) rotate(225deg); color: violet;}
+    70% {transform: translate(0px, -448%) rotate(270deg); color: red;}
+    75% {transform: translate(2px, -480%) rotate(315deg); color: orange;}
+    80% {transform: translate(0px, -512%) rotate(360deg); color: yellow;}
+    85% {transform: translate(2px, -544%) rotate(45deg); color: green;}
+    90% {transform: translate(0px, -576%) rotate(90deg); color: blue;}
+    95% {transform: translate(2px, -608%) rotate(135deg); color: violet;}
+    100% {transform: translate(0px, -650%) rotate(180deg); color: red;}
+}
+
+@keyframes spin {
+    0% {transform: scale(1, 1); opacity: 1;}
+    10% {transform: rotate(90deg) scale(.9, .9); opacity: .9;}
+    20% {transform: rotate(180deg) scale(.8, .8); opacity: .8;}
+    30% {transform: rotate(270deg) scale(.7, .7); opacity: .7;}
+    40% {transform: rotate(360deg) scale(.6, .6); opacity: .6;}
+    50% {transform: rotate(450deg) scale(.5, .5); opacity: .5;}
+    60% {transform: rotate(540deg) scale(.4, .4); opacity: .4;}
+    70% {transform: rotate(630deg) scale(.3, .3); opacity: .3;}
+    80% {transform: rotate(720deg) scale(.2, .2); opacity: .2;}
+    90% {transform: rotate(810deg) scale(.1, .1); opacity: .1;}
+    100% {transform: rotate(900deg) scale(0, 0); opacity: 0;}
+}
+
+@keyframes squish {
+    0% {transform: scale(1, 1);}
+    10% {transform: scale(1.5, .5);}
+    20% {transform: scale(2, .25);}
+    30% {transform: scale(2, .25);}
+    40% {transform: scale(1.5, .5);}
+    50% {transform: scale(1, 1);}
+    60% {transform: scale(.5, 1.5);}
+    70% {transform: scale(.25, 2);}
+    80% {transform: scale(1, 1);}
+    90% {transform: scale(.5, .5);}
+    100% {transform: scale(0, 0);}
+}
+
+@keyframes circle {
+    0% {transform: translate(0px, 0px);}
+    10% {transform: translate(-70px, -70px);}
+    20% {transform: translate(-100px, -100px);}
+    30% {transform: translate(-170px, -70px);}
+    40% {transform: translate(-200px, 0px);}
+    50% {transform: translate(-170px, 70px);}
+    60% {transform: translate(-100px, 100px);}
+    70% {transform: translate(-70px, 70px);}
+    100% {transform: translate(0px, 0px);}
+}
+
+@keyframes flipNLand {
+    0% {transform: translate(0px, 0px);}
+    20% {transform: translate(0px, -50%) rotate(45deg);}
+    30% {transform: translate(0px, -100%) rotate(90deg);}
+    40% {transform: translate(0px, -150%) rotate(135deg);}
+    50% {transform: translate(0px, -200%) rotate(180deg);}
+    60% {transform: translate(0px, -150%) rotate(225deg);}
+    70% {transform: translate(0px, -100%) rotate(270deg);}
+    80% {transform: translate(0px, -50%) rotate(315deg);}
+    100% {transform: translate(0px, 0px) rotate(360deg);}
+}
+
+@keyframes pulse {
+    0% {transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.8); border-radius: 20px;}
+    40% {transform: scale(1); box-shadow: 0 0 0 20px rgba(0, 0, 0, 0); border-radius: 20px;}
+    60% {transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.8); border-radius: 20px;}
+    80% {transform: scale(1); box-shadow: 0 0 0 20px rgba(0, 0, 0, 0); border-radius: 20px;}
+    100% {transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 0, 0, 0,); border-radius: 20px;}
+}
+
+@keyframes hang {
+    0% {transform: translate(0px, 0px);}
+    10% {transform: translate(2px, 5%) rotate(35deg);}
+    20% {transform: translate(2px, 10%) rotate(70deg);}
+    30% {transform: translate(2px, 15%) rotate(105deg);}
+    40% {transform: translate(2px, 30%) rotate(195deg);}
+    50% {transform: translate(2px, 35%) rotate(140deg);}
+    60% {transform: translate(1px, 40%) rotate(200deg);}
+    70% {transform: translate(1px, 40%) rotate(160deg);}
+    80% {transform: translate(0px, 40%) rotate(190deg);}
+    90% {transform: translate(0px, 40%) rotate(170deg);}
+    100% {transform: translate(0px, 40%) rotate(180deg) ;}
 }
 
 @keyframes shake {
