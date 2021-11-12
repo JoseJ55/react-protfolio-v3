@@ -4,7 +4,7 @@ import { FiMenu } from 'react-icons/fi';
 
 import { AiFillHome } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
-import { MdWebAsset, MdPermContactCalendar } from "react-icons/md";
+import { MdWebAsset } from "react-icons/md";
 import { IoMdDocument} from "react-icons/io";
 
 function Navbar() {
@@ -27,7 +27,7 @@ function Navbar() {
                 <button className="btn"><a href="/"><AiFillHome size={42}/>Home</a></button>
                 <button className="btn"><a href="/#about"><BsFillPersonFill size={42}/>About</a></button>
                 <button className="btn"><a href="/#projects"><MdWebAsset size={42} />Projects</a></button>
-                <button className="btn"><a href="/#contact"><MdPermContactCalendar size={42} />Contact</a></button>
+                {/* <button className="btn"><a href="/#contact"><MdPermContactCalendar size={42} />Contact</a></button> */}
                 <button className="btn"><a href="/#resume"><IoMdDocument size={42} />Resume</a></button>
             </div>
 
@@ -39,7 +39,7 @@ function Navbar() {
                     <button className="btnRes" onClick={toggleNav}><a href="/">Home</a></button>
                     <button className="btnRes" onClick={toggleNav}><a href="/#about">About</a></button>
                     <button className="btnRes" onClick={toggleNav}><a href="/#projects">Projects</a></button>
-                    <button className="btnRes" onClick={toggleNav}><a href="/#contact">Contact</a></button>
+                    {/* <button className="btnRes" onClick={toggleNav}><a href="/#contact">Contact</a></button> */}
                     <button className="btnRes" onClick={toggleNav}><a href="/#resume">Resume</a></button>
                 </div>
             </div>
