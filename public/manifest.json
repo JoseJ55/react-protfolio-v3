@@ -19,7 +19,7 @@
     },
     {
       "src": "picon720.jpg",
-      "type":"image/png",
+      "type":"image/x-icon",
       "sizes": "720x720"
     }
   ],
