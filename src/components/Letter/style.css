@@ -4,13 +4,7 @@
 
 .letter {
     transition-duration: .5s;
-    /* transform: scale(1.5); */
     display: inline-block;
-    /* animation: shake 0.5s; */
-    /* animation-iteration-count: infinite; */
-    /* animation: change 1s; */
-    /* animation-iteration-count: infinite; */
-    /* animation-fill-mode: forwards; */
 }
 
 .letter:hover {
@@ -18,10 +12,9 @@
     cursor: pointer;
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
-    /* animation: shake 0.5s; */
-    /* animation-iteration-count: initial; */
 }
 
+/* Still need to animate thing better so they can be smoother. */
 @keyframes bounce {
     0% {transform: translate(0px, 0px);}
     10% {transform: translate(0px, -100%);}

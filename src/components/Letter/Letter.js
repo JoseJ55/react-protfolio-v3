@@ -1,71 +1,100 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 // import reactDom from "react-dom";
 import "./style.css";
 
-function Letter({ letter }) {
+// Need to find out how to reset all animations with one button press. Also need
+// to have animations play on first click.
+function Letter({ letter, update, setUpdate }) {
     const [change, setChange] = useState({
         animation: "0",
     })
-    // const [animation, setAnimation] = useState({
+    const [animation, setAnimation] = useState("0")
+    const animateStyle = useRef({ animation: "0"});
 
-    // })
-
-    // useEffect(() => {
-    //     switch(letter){
-    //         case "H":
-    //             setAnimation({})
-    //             break;
-    //         default:
-    //             setAnimation({animation: "change 1s forwards"})
-    //     }
-    // }, [])
+    useEffect(() => {
+        switch(letter){
+            case "H":
+                setAnimation("bounce 3s forwards")
+                break;
+            case "e":
+                let ran = Math.floor(Math.random() * 3)
+                if(ran === 1){
+                    setAnimation("flipNRunOne 4s forwards")
+                } else if (ran === 2) {
+                    setAnimation("flipNRunTwo 4s forwards")
+                } else {
+                    setAnimation("flipNRunThree 4s forwards")
+                }
+                break;
+            case "l":
+                setAnimation("drop 1s forwards");
+                break;
+            case "o":
+                setAnimation("offWalls 2s forwards");
+                break;
+            case "I":
+                setAnimation("spin 2s forwards");
+                break;
+            case "i":
+                setAnimation("spin 2s forwards");
+                break;
+            case "J":
+                setAnimation("hang 2s forwards");
+                break;
+            case "s":
+                setAnimation("circle 2s forwards");
+                break;
+            case "m":
+                setAnimation("squish 2s forwards");
+                break;
+            case "n":
+                setAnimation("flipNLand 1s forwards");
+                break;
+            case "z":
+                setAnimation("pulse 2s forwards");
+                break;
+            default:
+                setAnimation("change 1s forwards")
+        }
+    }, [])
 
     const animate = () => {
-        console.log(change)
         if (change.animation === "0") {
-            // setChange({animation: "drop 1s forwards"})
-            // setChange({animation: "bounce 3s forwards"})
-            // setChange({animation: "flipNRunOne 4s forwards"})
-            // setChange({animation: "flipNRunTwo 4s forwards"})
-            // setChange({animation: "flipNRunThree 4s forwards"})
-            // setChange({animation: "flipNRunFour 3s forwards"})
-            // setChange({animation: "offWalls 2s forwards"})
-            // setChange({animation: "spin 2s forwards"})
-            // setChange({animation: "squish 2s forwards"})
-            // setChange({animation: "circle 2s forwards"})
-            // setChange({animation: "flipNLand 1s forwards"})
-            // setChange({animation: "pulse 2s forwards"})
-            setChange({animation: "hang 2s forwards"})
+            setChange({animation: animation})
         } else {
             setChange({ animation: "0"})
         }
     }
 
     const stop = () => {
-        console.log(
-            "stop"
-            // reactDOM.findDOMNode(<Letter/>)
-        )
+        setChange({animation: "0"})
+
+        if(update === true){
+            setUpdate(false)
+        } else {
+            setUpdate(true)
+        }
     }
 
     return (
         <div className="letters">
-            {/* {letter === "'" ? 
+            {letter === "'" ? 
                 <span 
                     className="letter"
                     onClick={() => stop()}
                 >
                     {letter}
                 </span>
-                : */}
+                :
                 <span 
                     className="letter"
                     style={change}
+                    ref={animateStyle}
                     onClick={() => animate()}
                 >
                     {letter}
                 </span>
-            {/* } */}
+            } 
         </div>
     )
 }
