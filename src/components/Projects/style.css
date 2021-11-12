@@ -23,9 +23,11 @@
 @media only screen and (max-width: 1100px){
     #projects {width: 90%;}
     #projectsTitle {font-size: 250%;}
+    #projectArea {flex-direction: column;}
 }
 
 @media only screen and (max-width: 500px){
     #projects {width: 90%;}
     #projectsTitle {font-size: 200%;}
+    #projectArea {flex-direction: column;}
 }

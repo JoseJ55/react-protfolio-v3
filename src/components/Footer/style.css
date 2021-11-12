@@ -115,3 +115,89 @@
     cursor: pointer;
     transition-duration: .5s;
 }
+
+@media only screen and (max-width: 1100px){
+    #footer {
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+
+    #contact {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #email {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .emailItem {
+        width: 100%;
+        margin: 0;
+    }
+
+    #emailEmail {
+        width: 100%;
+        margin: 0;
+        padding: 1vh 3%;
+    }
+
+    #emailPhone {
+        width: 100%;
+        margin: 0;
+        padding: 1vh 3%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #contact {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #email {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .emailItem {
+        width: 100%;
+        margin: 0;
+    }
+
+    #emailEmail {
+        width: 100%;
+        margin: 0;
+        padding: 1vh 3%;
+    }
+
+    #emailPhone {
+        width: 100%;
+        margin: 0;
+        padding: 1vh 3%;
+    }
+}

@@ -54,3 +54,11 @@
 #popUpMore:hover {
     color: var(--secondary-color)
 }
+
+@media only screen and (max-width: 1100px){
+    #popUpArea {width: 90%;}
+}
+
+@media only screen and (max-width: 500px){
+    #popUpArea {width: 90%;}
+}
