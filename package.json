@@ -2,7 +2,6 @@
   "name": "react-protfolio-v3",
   "version": "0.1.0",
   "private": true,
-  "main": "server.js",
   "engines": {
     "node": "16.x"
   },
@@ -28,12 +27,10 @@
     "react-spring": "^8.0.27"
   },
   "scripts": {
-    "dev": "react-script start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm install"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
