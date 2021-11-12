@@ -16,6 +16,11 @@
       "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "picon720.jpg",
+      "type":"image/png",
+      "sizes": "720x720"
     }
   ],
   "start_url": ".",
