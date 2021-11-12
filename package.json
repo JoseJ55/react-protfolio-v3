@@ -2,6 +2,7 @@
   "name": "react-protfolio-v3",
   "version": "0.1.0",
   "private": true,
+  "main": "server.js",
   "engines": {
     "node": "16.x"
   },
@@ -32,7 +33,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm install"
   },
   "eslintConfig": {
     "extends": [
