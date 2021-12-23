@@ -15,8 +15,10 @@
     display: flex;
     flex-direction: column;
     background-color: #999;
-    padding: 1vh 1vw;
+    border-radius: 10px;
+    padding: 2vh 1vw;
     width: 50%;
+    font-size: 1.1rem;
 }
 
 #popUpExit{
@@ -35,6 +37,7 @@
 #popUpArea h2 {
     padding: 1vh 0;
     cursor: auto;
+    color: var(--secondary-color);
 }
 
 #popUpArea p {
@@ -44,15 +47,22 @@
 
 #popUpMore {
     font-size: 105%;
-    background-color: transparent;
+    background-color: white;
+    padding: 1vh 1vw;
     border: none;
     width: fit-content;
     margin-left: auto;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 #popUpMore:hover {
-    color: var(--secondary-color)
+    box-shadow: 0px 0px 10px 3px rgba(250, 176, 107, .9);
+    background-color: var(--secondary-color);
+    color: white;
+    /* transform: scale(1.1); */
+    
+    
 }
 
 @media only screen and (max-width: 1100px){

@@ -38,6 +38,7 @@
     background-position: center;
     /* background-size: auto; */
     opacity: .8;
+    border-radius: 10px;
 }
 
 .projectTitle {

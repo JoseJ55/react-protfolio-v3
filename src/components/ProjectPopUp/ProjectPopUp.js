@@ -28,7 +28,7 @@ function ProjectPopUp({ popUp, setPopUp, title, desc }) {
 
                 <h2>{title}</h2>
                 {/* change desc to a sorter version so it can fit on screen better. */}
-                <p>{desc}</p>
+                <p>{desc.substr(0,300) + "..."}</p>
 
                 <button type="button" value="full" id="popUpMore" onClick={() => changeToProject(title)}>More Info</button>
             </animated.div>
