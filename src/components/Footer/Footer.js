@@ -15,6 +15,13 @@ function Footer(){
     const [phone, setPhone] = useState("");
     const [subject, setSubject] = useState("");
     const [text, setText] = useState("");
+    const [inputError, setInputError] = useState({
+        name: {},
+        email: {},
+        phone: {},
+        subject: {},
+        text: {}
+    })
 
     const sendData = () => {
         let mail = {
@@ -32,15 +39,35 @@ function Footer(){
             "user_XiAqAO8SE5exdjP8TwO0u"
         )
         .then((result) => {
-            console.log(result)
+            // console.log(result)
             setNotice(true);
             setNoticeText("success")
-
         }).catch((err) => {
-            console.log(err.text)
+            // console.log(err.text)
             setNotice(true);
             setNoticeText("error");
         })
+    }
+
+    // Need to finish added error secitons for empty or wrong inputs.
+    const verify = () => {
+        if (name === "" || email === "" || phone === "" || subject === "" || text === ""){
+            if(name === ""){
+                setInputError({...inputError, name:{borderColor: "red"}})
+            }
+            if(email === ""){
+                setInputError({...inputError, email:{borderColor: "red"}})
+            }
+            if(phone === ""){
+                setInputError({...inputError, phone:{borderColor: "red"}})
+            }
+            if(subject === ""){
+                setInputError({...inputError, subject:{borderColor: "red"}})
+            }
+            if(text === ""){
+                setInputError({...inputError, text:{borderColor: "red"}})
+            }
+        }
     }
 
     return (
@@ -61,6 +88,7 @@ function Footer(){
                     className="emailItem" 
                     type="text" 
                     placeholder="Name" 
+                    style={inputError.name}
                     onChange={(e) => setName(e.target.value)}
                 />
                 <input 
@@ -68,6 +96,7 @@ function Footer(){
                     className="emailItem" 
                     type="text" 
                     placeholder="Email" 
+                    style={inputError.email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
                 <input 
@@ -75,6 +104,7 @@ function Footer(){
                     className="emailItem" 
                     type="text" 
                     placeholder="Phone" 
+                    style={inputError.phone}
                     onChange={(e) => setPhone(e.target.value)}
                 />
                 <input 
@@ -82,6 +112,7 @@ function Footer(){
                     className="emailItem" 
                     type="text" 
                     placeholder="Subject" 
+                    style={inputError.subject}
                     onChange={(e) => setSubject(e.target.value)}
                 />
                 <textarea 
@@ -90,6 +121,7 @@ function Footer(){
                     type="text" 
                     placeholder="Type you message here..." 
                     rows="7" 
+                    style={inputError.text}
                     onChange={(e) => setText(e.target.value)}
                 />
                 

@@ -54,6 +54,12 @@ function Skills() {
                     </div>
                     Mongoose
                 </li>
+                <li className="skillBox">
+                    <div id="skillReact" className="skillC">
+                        <FaReact color="blue"/>
+                    </div>
+                    React Native
+                </li>
             </ul>
         </div>
     )
