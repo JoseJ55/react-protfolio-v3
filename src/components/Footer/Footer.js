@@ -77,8 +77,8 @@ function Footer(){
                 <p className="contactItem">Email: <a href="mailto:josejimenez826@gmail.com">josejimenez826@gmail.com</a></p>
                 <p className="contactItem">Phone: 1-(760)-221-2790</p>
                 <div id="contactIcons">
-                    <a href="https://github.com/JoseJ55"><AiFillGithub className="icon" size={28}  color="white"/></a>
-                    <a href="https://www.linkedin.com/in/jose-jimenez-238453169"><AiFillLinkedin className="icon" size={28} color="white"/></a>
+                    <a href="https://github.com/JoseJ55"><AiFillGithub className="icon" size={28}  color="#f3bd3c"/></a>
+                    <a href="https://www.linkedin.com/in/jose-jimenez-238453169"><AiFillLinkedin className="icon" size={28} color="#f3bd3c"/></a>
                 </div>
             </div>
 

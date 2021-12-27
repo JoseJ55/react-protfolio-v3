@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: var(--main-color);
+    background-color: var(--footer-background-color);
     padding: 5vh 0;
     
 }
@@ -10,22 +10,23 @@
 #contact {
     width: 20%;
     padding: 2vh 0;
+    color: var(--footer-contact-color);
 }
 
 #contactTitle {
-    color: var(--secondary-color);
+    color: var(--footer-contact-color);
     /* padding: 10vh; */
     margin: 0  0 2vh 0;
 }
 
 .contactItem{
-    color: var(--secondary-color);
+    /* color: var(--secondary-color); */
     padding: 1vh 0;
 }
 
 .contactItem a {
     text-decoration: none;
-    color: var(--secondary-color)
+    color: var(--footer-contact-color)
 }
 
 .contactItem a:hover {
@@ -35,6 +36,7 @@
 #contactIcons {
     display: flex;
     padding: 1vh 0;
+    color: var(--footer-icon-color);
 }
 
 #email {
@@ -48,10 +50,11 @@
 .emailItem{
     width: 100%;
     padding: 1vh 3%;
-    background-color: var(--main-color);
+    background-color: var(--footer-text-background-color);
     border: none;
     border-bottom: 1px var(--secondary-color) solid;
-    color: white;
+    color: var(--secondary-text-color);
+    /* color: white; */
     font-size: 110%;
     margin: 1vh 0;
     outline: var(--secondary-color);
@@ -104,14 +107,14 @@
     width: 100%;
     padding: 1vh 0;
     background-color: transparent;
-    color: var(--secondary-color);
+    color: var(--secondary-text-color);
     border: 1px var(--secondary-color) solid;
     font-size: 110%;
 }
 
 #emailBtn:hover {
-    background-color: var(--secondary-color);
-    color: var(--main-color);
+    background-color: var(--footer-text-background-color);
+    color: var(--secondary-text-color);
     cursor: pointer;
     transition-duration: .5s;
 }

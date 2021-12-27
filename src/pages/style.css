@@ -4,13 +4,34 @@
 }
 
 :root{
-    --main-color: #333;
+    /* ----------------- main colors ---------------------- */
+    /* --main-color: #333;
     --hover-color: #222;
     --background-color: #555;
-    /* --background-color: #333366; */
-    /* --background-color: #4d0f0f; (No) */
     --secondary-color: rgb(250, 176, 107);
-    --text-color: #fff;
+    --footer-contact-color: rgb(250, 176, 107);
+    --text-color: #fff; */
+    /* --secondary-text-color: white; */
+    /* ----------------------------------------------------- */
+    /* ----------------- winter colors --------------------- */
+    /* --main-color: #eae4e2; */
+    --main-color: #a6e7ff;
+    --main-title: #f3bd3c;
+    --hover-color: grey;
+    --nav-icon-color: #30d5c8;
+    --nav-hover-button: #f1f0ed;
+    --background-color: #1b2278;
+    /* --background-color: #000957; */
+    --footer-text-background-color: #afeeee;
+    --footer-background-color: #f1f0ed;
+    --footer-contact-color: #30d5c8;
+    --footer-icon-color: white;
+    /* --background-color: #6693aa; */
+    /* --secondary-color: #dbdbdb; */
+    --secondary-color: #f3bd3c;
+    --text-color: #98b4cd;
+    --secondary-text-color: #f3bd3c;
+    /* ----------------------------------------------------- */
 }
 
 html {
@@ -19,7 +40,9 @@ html {
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
+    /* background-image: linear-gradient(black, var(--background-color)); */
+    background: transparent;
 }
 
 .contain {
@@ -28,6 +51,8 @@ body{
 
 .homeNavbar {
     width: 10%;
+    /* position: absolute;
+    z-index: 100; */
 }
 
 .homeBody {
@@ -35,6 +60,22 @@ body{
     float: right;
     display: flex;
     flex-direction: column;
+    /* position: absolute; */
+    /* z-index: 100; */
+}
+
+.background {
+    position: absolute;
+    z-index: -999;
+    width: 70%;
+    height: 70%;
+}
+
+.back {
+    width: 60%;
+    height: 60%;
+    position: relative;
+    z-index: -999;
 }
 
 @media only screen and (max-width: 1100px) {

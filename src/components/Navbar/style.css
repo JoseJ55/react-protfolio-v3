@@ -25,7 +25,7 @@
 
 .btn a {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--nav-icon-color);
     padding: 1vh 2vw;
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@
 }
 
 .btn:hover {
-    background-color: var(--hover-color);
+    background-color: var(--nav-hover-button);
 }
 
 #about{
