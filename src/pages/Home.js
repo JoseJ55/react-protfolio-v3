@@ -8,6 +8,7 @@ import Projects from "../components/Projects/Projects";
 import Resume from "../components/Resume/Resume";
 import Footer from "../components/Footer/Footer";
 import ParticlesBackGround from "../components/ParticlesBackGround/ParticlesBackGround";
+import FooterCurve from "../components/FooterCurve/FooterCurve";
 import "./style.css";
 
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
                 <About />
                 <Projects />
                 <Resume />
+                <FooterCurve/>
                 <Footer />
                 
             </div>

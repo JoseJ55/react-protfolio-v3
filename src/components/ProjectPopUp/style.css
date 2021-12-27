@@ -14,7 +14,7 @@
 #popUpArea {
     display: flex;
     flex-direction: column;
-    background-color: #999;
+    background-color: var(--project-popup-color);
     border-radius: 10px;
     padding: 2vh 1vw;
     width: 50%;
@@ -28,6 +28,8 @@
     margin-left: auto;
     cursor: pointer;
     border-radius: 50%;
+    /* color: var(--project-popup-text-color) */
+    color: var(--text-color);
 }
 
 #popUpExit:hover {
@@ -43,6 +45,8 @@
 #popUpArea p {
     padding: 1vh 1vw;
     cursor: auto;
+    /* color: var(--project-popup-text-color); */
+    color: var(--text-color);
 }
 
 #popUpMore {

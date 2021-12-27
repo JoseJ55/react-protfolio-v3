@@ -2,12 +2,16 @@ const pBackground = {
     autoPlay: true,
     background: {
         color: {
-            value: "#1b2278"
+            // value: "#1b2278"
+            value: "#191c31"
             // value: "#111"
         },
-        position: "50% 50%",
+        position: "50% -50%",
         repeat: "no-repeat",
         size: "contain",
+        // size: {
+        //     background-siz
+        // },
         opacity: 1,
     },
     backgroundMask: {
@@ -342,7 +346,7 @@ const pBackground = {
                 factor: 1000,
             },
             limit: 0,
-            value: 400,
+            value: 300,
         },
         opacity: {
             random: {

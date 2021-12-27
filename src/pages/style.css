@@ -19,6 +19,7 @@
     --main-title: #f3bd3c;
     --hover-color: grey;
     --nav-icon-color: #30d5c8;
+    /* --nav-hover-button: #f1f0ed; */
     --nav-hover-button: #f1f0ed;
     --background-color: #1b2278;
     /* --background-color: #000957; */
@@ -31,6 +32,10 @@
     --secondary-color: #f3bd3c;
     --text-color: #98b4cd;
     --secondary-text-color: #f3bd3c;
+    --project-card-color: #afeeee;
+    --project-card-text-color: #f3bd3c;
+    --project-popup-color: #1b2278;
+    --project-popup-text-color: #f1f0ed;
     /* ----------------------------------------------------- */
 }
 
