@@ -13,14 +13,19 @@
 .projectHead button {
     padding: .5vh 2vw;
     background-color: var(--main-color);
-    border: grey .1rem solid;
-    border-radius: 20%;
+    border: var(--project-header-secondary-color) .1rem solid;
+    border-radius: 10px;
     color: var(--text-color);
     font-size: 110%;
 }
 
 .projectHead button:hover {
     cursor: pointer;
+    transform:scale(1.1);
+    transition-duration: 1s;
+    box-shadow: 0px 0px 5px 3px var(--project-header-secondary-color);
+    /* background-color: var(--project-header-secondary-color);
+    border-color: var(--main-color); */
 }
 
 .projectHead button:active {
@@ -52,7 +57,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #777;
+    /* background-color: #777; */
+    background-color: var(--main-color-opacity);
     padding: 2vh 0;
 }
 
@@ -80,7 +86,7 @@
     display: flex;
     flex-direction: column;
     padding: 2vh 0;
-    color: white;
+    color: var(--text-color);
     font-size: 130%;
 }
 
