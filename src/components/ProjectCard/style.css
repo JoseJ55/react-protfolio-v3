@@ -1,7 +1,7 @@
 .projectContainer{
     position: relative;
     text-align: center;
-    width: 100%;
+    width: 33%;
     height: 50vh;
     margin: 1vh 0;
     transition: transform;
