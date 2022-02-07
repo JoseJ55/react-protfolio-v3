@@ -38,6 +38,14 @@ export function ProjectsProvider({ children }) {
             tools: ["HTML", "CSS", "Javascript", "React.js", "React Hooks", "cocktaildb API"],
             exampleImage: "onlineBarMain.png",
             images: ["/images/onlineBar/onlinebarMain.png", "/images/onlineBar/onlineBar.png", "/images/onlineBar/onlineBarIngSearch.png", "/images/onlineBar/onlineBarDrinkSearch.png"],
+        },
+        {
+            title: "UI Project",
+            links: ["https://github.com/JoseJ55/ui-project"],
+            description: "This project is based on the project totorial by JavaScript Mastery on their youtube video 'Build and Deploy a Fully Responsive Modern UI/UX Website in React JS'. As practice I tried to build the project alone and then review the video to see the differences. Between what I did and the person did. Most of the difference were minor, but the totrial help show me another way to align content better and a more structured way of getting images and files when there is a lot of them.",
+            tools: ["HTML", "CSS", "Javascript", "React.js", "React Hooks"],
+            exampleImage: "uiProject.png",
+            images: ["/images/uiProject/uiProject.png", "/images/uiProject/uiProject2.png", "/images/uiProject/uiProject3.png", "/images/uiProject/uiProject4.png"],
         }
     ])
 
